@@ -6,11 +6,13 @@ import { DataBase } from './DataBase'
 
 
 class DataBaseApiContainer extends React.Component{
+
     componentDidMount(){
         api.getPeople()
         .then(response => {
             this.props.setPeople(response.data.results)
         })
+        
     }
 
     onPageChange(pageNumber){
@@ -19,11 +21,13 @@ class DataBaseApiContainer extends React.Component{
             this.props.setPeople(response.data.results)
             this.props.setCurrentPage(pageNumber)
         }) 
+      
     }
 
     render() {
         return <DataBase people={this.props.people}
-                         onPageChange={this.onPageChange.bind(this)}/>
+                         onPageChange={this.onPageChange.bind(this)}
+                         />
     }
 }
 

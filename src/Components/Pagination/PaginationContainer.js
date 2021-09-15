@@ -13,7 +13,6 @@ class PaginationApiContainer extends React.Component {
     }) 
 }
 
-
     render(){
         return <Pagination  onPageChange={this.props.onPageChange}
                             totalPeopleCount={this.props.totalPeopleCount}

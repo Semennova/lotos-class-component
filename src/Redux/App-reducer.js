@@ -3,31 +3,7 @@ const SET_TOTAL_PEOPLE_COUNT = 'SET_TOTAL_PEOPLE_COUNT'
 const SET_CURRENT_PAGE = 'SET_CURRENT_PAGE'
 
 let initialState = {
-    people: [
-        {
-            name: 'C-3PO', 
-            height: '167', 
-            mass: '75', 
-            hair_color: 'n/a', 
-            skin_color: 'gold', 
-            eye_color: 'yellow', 
-            birth_year: '112BBY', 
-            gender: 'n/a', 
-            homeworld: 'https://swapi.dev/api/planets/1/', 
-        },
-
-        {
-            name: 'Luke Skywalker', 
-            height: '172', 
-            mass: '77', 
-            hair_color: 'blond', 
-            skin_color: 'fair', 
-            eye_color: 'blue', 
-            birth_year: '19BBY', 
-            gender: 'male', 
-            homeworld: 'https://swapi.dev/api/planets/1/', 
-           }
-    ],
+    people: [],
     pageSize: 10,
     currentPage: 1,
     totalPeopleCount: 0
